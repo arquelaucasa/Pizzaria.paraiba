@@ -3,8 +3,8 @@
 
 :root {
     --main-color: #da190f;
-    --bg:#13131a;
-    --br-card:#0c0c14;
+    --bg: #13131a;
+    --br-card: #0c0c14;
     --border: 0.1rem solid grey;
 
 }
@@ -12,78 +12,152 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:  border-box; /* */
-    font-family: 'Roboto', 'sans-serif'; /* */
+    box-sizing: border-box;
+    /* */
+    font-family: 'Roboto', 'sans-serif';
+    /* */
     text-decoration: none;
-    text-transform: capitalize; /**/
-    transition: 0.2s linear; /**/
-    outline: none;  /**/
-    border: none;  /**/
+    text-transform: capitalize;
+    /**/
+    transition: 0.2s linear;
+    /**/
+    outline: none;
+    /**/
+    border: none;
+    /**/
     scroll-behavior: smooth;
 
 }
 
 html {
-    font-size:62.5%; /*configuração do font-size para 62.5%, facilitando o uso do rem (1rem = 10px)*/
-    overflow-x: hidden; /**/
+    font-size: 62.5%;
+    /*configuração do font-size para 62.5%, facilitando o uso do rem (1rem = 10px)*/
+    overflow-x: hidden;
+    /**/
 }
 
 body {
     background: var(--bg);
 }
+
 header {
     background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7% ; /* explicação do uso da porcentagem*/
+    padding: 1.5rem 7%;
+    /* explicação do uso da porcentagem*/
     border-bottom: var(--border);
-    position:  sticky; /* sticky posição do header*/
+    position: sticky;
+    /* sticky posição do header*/
     top: 0;
     left: 0;
     z-index: 999;
-   
-   
+
+
 
 }
 
 .logo img {
-    height: 6.5rem; /* difine a altura de logo*/
-    border-radius: 100%; /* torna a logo circular*/
+    height: 6.5rem;
+    /* difine a altura de logo*/
+    border-radius: 100%;
+    /* torna a logo circular*/
 
 }
 
 .ul-header {
     display: flex;
     gap: 15px;
-    list-style: none; /* tirá as bolinhas das homes sempre na ul*/
+    list-style: none;
+    /* tirá as bolinhas das homes sempre na ul*/
 }
 
 .ul-header li a {
     color: #fff;
     font-size: 1.6rem;
-  
+
 
 }
 
-.ul-header li a:hover{
-    color: var(--main-color); /* mudar a cor do hover*/
-    border-bottom: 0.1rem solid var(--main-color); /* adicionar uma linha inferior no hover*/
-    padding-bottom: 0.5rem; /*adiciona espaçamento inferior no hover*/
-   
+.ul-header li a:hover {
+    color: var(--main-color);
+    /* mudar a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);
+    /* adicionar uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*adiciona espaçamento inferior no hover*/
+
 }
 
-.icons { /* não estou mexendo nos icones, e sim na caixa ok??*/
+.icons {
     display: flex;
+    /* não estou mexendo nos icones, e sim na caixa ok??*/
     align-items: center;
     gap: 15px;
 }
 
 .icons i {
-    color: white; /* cor branca para icones*/
-    cursor:  pointer; /* altera o cursor ao passar sobre o icones*/
-    font-size: 2.5rem; /* tamanho do icones*/
+    color: white;
+    /* cor branca para icones*/
+    cursor: pointer;
+    /* altera o cursor ao passar sobre o icones*/
+    font-size: 2.5rem;
+    /* tamanho do icones*/
 }
+
 .icons i:hover {
-    color: var(--main-color); /* mudar a cor do icone ao passar o mause*/
+    color: var(--main-color);
+    /* mudar a cor do icone ao passar o mause*/
+}
+
+/* primeira section*/
+
+#home {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* perite posicionamento*/
+    min-height: 85vh;
+    /*altura minima da sessão*/
+    background: url(imagens/home.jpg) no-repeat;
+    /*add img sem repetição*/
+    background-size: cover;
+    /*preenchimento da imagem*/
+    background-position: center;
+    /*posicionamento da imagem*/
+    border-bottom: var(--border);
+    /*adiciona borda inferior*/
+}
+
+.content {
+    max-width: 60rem;
+    /* define largura máxima*/
+    position: relative;
+    /* permite manipulara posição (vou expkicar)*/
+    z-index: 2;
+    /*garante que o conteúdo fique acima da sobreposição*/
+}
+
+.content h3 {
+    font-size: 6rem;
+    /*tamanho da fonte para o parágrafo */
+    text-decoration: uppercase;
+    /* deixa o texto em caixa alta */
+    color: #fff;
+    /*cor branca*/
+
+}
+
+.content p {
+    font-size: 2rem;
+    /* tamanho da fonte para o parágrafos*/
+    font-weight: lighter;
+    /* peso dea fonte mais leve*/
+    line-height: 1.8;
+    /*espaçamento entre linhas */
+    padding: 1rem 0;
+    /*wapaçamento interno*/
+    color: #fff;
+    /*cor da letra*/
 }
