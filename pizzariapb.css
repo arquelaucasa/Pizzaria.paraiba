@@ -161,3 +161,31 @@ header {
     color: #fff;
     /*cor da letra*/
 }
+
+
+#home::before {
+
+    content: "";
+    /*adixionar pseudo-elemento vazio*/
+    position: absolute;
+    /* permite posicionamente absuluto*/
+    top: 0;
+    /*alinha o pseudo-elemento*/
+    left: 0;
+    /* alinha a esqueda*/
+    width: 100%;
+    /*ocupa toda a largura*/
+    height: 100%;
+    /* ocupa toda altura*/
+     background-color: rgba(0, 0,0, 0.5);
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+/* https://www.w3schools.com/cssref/sel_before.php */
