@@ -131,6 +131,7 @@ header {
 }
 
 .content {
+
     max-width: 60rem;
     /* define largura máxima*/
     position: relative;
@@ -160,6 +161,7 @@ header {
     /*wapaçamento interno*/
     color: #fff;
     /*cor da letra*/
+  
 }
 
 
@@ -182,7 +184,67 @@ header {
 
 }
 
+      /*teste */
+.amanda  {
+    color: white;
+   font-size: 1.6rem;
+    text-align: center;
+}
 
+.ancura {
+    text-align: center;
+    font-size: 1.5rem;
+
+   
+}
+.btn {
+    color: white;
+}
+.amanda:hover {
+     color: var(--main-color);
+    /* mudar a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);
+    /* adicionar uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*adiciona espaçamento inferior no hover*/
+
+
+}
+.btn:hover {
+    color: var(--main-color);
+    /* mudar a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);
+    /* adicionar uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*adiciona espaçamento inferior no hover*/
+
+
+}
+
+footer {
+    color: white;
+    font-size: 1.5rem;
+     display: flex;
+     text-align: center;
+     gap: 20px;
+     align-items: center;
+di
+}
+
+.footer-icones {
+   color:red ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  
+  
+ 
+}
+
+
+
+ 
 
 
 
