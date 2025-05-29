@@ -324,7 +324,44 @@ gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
     font-size: 1.5rem; /*defina o tamanho da fonte*/
     text-transform: lowercase; /* tranforma o texto adicional para letras maiuculas*/
 }
+.content h3{
+    font-size: 1rem;
 
+}
+
+/*inicio aula de hohe 29/05/25*/
+.container .box-container {
+    display: grid;/**/
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+/*aqui estmaos alterando a caixa (box)*/
+.review .box-container .box {
+    border: var(--border);
+    text-align: center; /*cetralizar o texto*/
+    padding: 3rem 2rem;
+}
+
+
+
+
+.review .box-container .box h3 {
+    padding: 1rem 0; /* add espaçamento lateral zerado as letras */
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.user {
+    height: 10rem; /*define altura */
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
 
 
 
