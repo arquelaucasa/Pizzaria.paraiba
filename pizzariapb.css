@@ -187,6 +187,7 @@ header {
  
 
 .btn:hover {
+
     color: var(--main-color);
     /* mudar a cor do hover*/
     border-bottom: 0.1rem solid var(--main-color);
@@ -267,21 +268,26 @@ section {
 
 }
  /*caixas com preço */
+
 .products .box-container {
+
     display: grid; /*organiza os elementos em uma grande*/
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     /* creia colunas flexiveis com altura de 30rem e maxima*/
 gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
+
 }
 
 
 
  /* estlizando os box  (as caixas)*/
+
  .box-container .box{
     text-align: center; /*centralizando textos*/
     border: var(--border); /*aplica uma borda ao redor da caixa*/
     padding: 2rem; /*adiciona espaçamento interno nas caixas*/
  }
+
  /*estilizando os icons*/
  .icons a i {
     height: 3rem; 
@@ -303,13 +309,18 @@ gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
  .box .image img {
     height: 25rem; /*altura das imagem*/
  }
+
+
 /*estilização da caixa "content"*/
+
 .box .container {
+
     color: #fff; /* define a cor branca para o conteódo twxtual*/
   font-size: 2.5rem; /*define o tamanho da fonte das estrelas*/
 }
 
 .box .container .stars i {
+
     font-size: 1.9rem; /*tamanha das estrelas*/
      color: var(--main-color); /*aplica a cor principal as estrelas*/
 }
@@ -324,17 +335,19 @@ gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
     font-size: 1.5rem; /*defina o tamanho da fonte*/
     text-transform: lowercase; /* tranforma o texto adicional para letras maiuculas*/
 }
-.content h3{
+.content h3 {
     font-size: 1rem;
 
 }
 
 /*inicio aula de hohe 29/05/25*/
+
 .container .box-container {
     display: grid;/**/
     grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
     gap: 1.5rem;
 }
+
 /*aqui estmaos alterando a caixa (box)*/
 .review .box-container .box {
     border: var(--border);
@@ -351,9 +364,11 @@ gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
     font-size: 2.2rem;
 }
 
+
+
 .user {
     height: 10rem; /*define altura */
-    width: 10rem;
+    width: 10rem; 
     border-radius: 50%;
     object-fit: cover;
 }
@@ -363,12 +378,85 @@ gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
     color: var(--main-color);
 }
 
+/*aula de hoje 30/05/25*/
+
+/*footer*/
+
+.title-footer {
+    text-align: center;
+    text-transform: uppercase; /* caixa alte*/
+    font-size: 2rem ;/*20%*/
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.title-footer span {
+    color: var(--main-color);
+    text-transform: uppercase; /*caixa alta*/
+
+}
+
+footer {
+    background: var(--bg);
+    text-align: center;
+    padding: 4rem 0;/*add espacamento interno vertical ao rodapé*/
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7%; /* add espacçamento interno horizonltal usando pocentagem*/
+
+} 
+
+.content-1 {
+
+    flex: 1 1 25rem; /*define tamanho flexivel com largura minima de 25rem*/
+    margin: 1rem; /*add espaçamento ao redor do conteúdo*/
+}
+
+.content-1 ul {
+
+    list-style: none;
+    padding: 0;/* remove espaçamento interno padrão*/
+    
+}
+.content-1 ul {
+margin-bottom: 1rem; /*add espaçamento inferior entre os intens da lista*/
 
 
+}
 
+.content-1 ul li a {
 
+    color: #ccc;
+    text-decoration: none;
+    font-size:  1.6rem;
+}
 
+.content-1 ul li a:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
 
+.social-links a i {
+    color: #ccc;
+    font-size: 3rem;
+
+}
+
+.social-links a i:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
 
 
 
