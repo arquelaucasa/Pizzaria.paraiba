@@ -161,7 +161,7 @@ header {
     /*wapaçamento interno*/
     color: #fff;
     /*cor da letra*/
-  
+
 }
 
 
@@ -179,15 +179,14 @@ header {
     /*ocupa toda a largura*/
     height: 100%;
     /* ocupa toda altura*/
-     background-color: rgba(0, 0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 
 }
 
- 
+
 
 .btn:hover {
-
     color: var(--main-color);
     /* mudar a cor do hover*/
     border-bottom: 0.1rem solid var(--main-color);
@@ -199,33 +198,40 @@ header {
 }
 
 section {
-    padding: 2rem 7%; /*gerante espaçamento interno nas sessões (responsividade)*/
+    padding: 2rem 7%;
+    /*gerante espaçamento interno nas sessões (responsividade)*/
 }
 
 .heading {
     text-align: center;
     color: #fff;
-    text-transform: uppercase;/*textu em caixa alta*/
-    padding-bottom: 3rem; /*espaçamento inferior em ao titulo*/
-    font-size: 4rem; /*40px*/
+    text-transform: uppercase;
+    /*textu em caixa alta*/
+    padding-bottom: 3rem;
+    /*espaçamento inferior em ao titulo*/
+    font-size: 4rem;
+    /*40px*/
 
 }
 
-.heading span{
+.heading span {
     color: var(--main-color);
-    text-transform: uppercase; /* texto caixa alta*/
+    text-transform: uppercase;
+    /* texto caixa alta*/
 
 }
 
 .btn {
 
     margin-top: 1rem;
-    padding: 0.9rem 3rem; /*preechimento superior e inferior*/
-    font-size:  1.7rem; 
+    padding: 0.9rem 3rem;
+    /*preechimento superior e inferior*/
+    font-size: 1.7rem;
     color: #fff;
     background: var(--main-color);
     cursor: pointer;
-    display: inline-block; /* deixando a formatação do botão em formato de (bloco)
+    display: inline-block;
+    /* deixando a formatação do botão em formato de (bloco)
 
     /*https:wwww.w3schools,com/css/tryit,asp?
     filenome=trycss_inline-block */
@@ -233,147 +239,247 @@ section {
 }
 
 .btn:hover {
-    letter-spacing: 0.2rem; /*espaçamento entre as letras ao passar o mauser*/
+    letter-spacing: 0.2rem;
+    /*espaçamento entre as letras ao passar o mauser*/
 
 }
 
 .row {
 
-    display: flex; /* define layou flexivel para  l*/
-    align-items: center;/**/
-    background: var(--bg-card); /* aplica um cor de fundo ao elemento*/
-    flex-wrap: wrap; /*permite que os itens quebrem para a proxima limha se necessário*/
-    border: var(--border); /* aplica um borda ao redor da linha*/
+    display: flex;
+    /* define layou flexivel para  l*/
+    align-items: center;
+    /**/
+    background: var(--bg-card);
+    /* aplica um cor de fundo ao elemento*/
+    flex-wrap: wrap;
+    /*permite que os itens quebrem para a proxima limha se necessário*/
+    border: var(--border);
+    /* aplica um borda ao redor da linha*/
 
-} 
+}
 
 .row .image {
-    flex: 1 1 45rem; /* define o tamnho flexivel do elemento: base 45rem, podeno creser ou encolher, ou seja 
+    flex: 1 1 45rem;
+    /* define o tamnho flexivel do elemento: base 45rem, podeno creser ou encolher, ou seja 
     faz com que passa ser adaptável para telas grande ou pequenas*/
 }
+
 .row .image img {
-    width: 100%; /*faz com que a imagem ocupe toda a largura do container (.image)*/
+    width: 100%;
+    /*faz com que a imagem ocupe toda a largura do container (.image)*/
 
 }
-.row .content{
-    flex: 1 1 45rem; /*define o tamanho flexivel do conteúdo: base 45rem, poderá crescer ou diminuir*/
+
+.row .content {
+    flex: 1 1 45rem;
+    /*define o tamanho flexivel do conteúdo: base 45rem, poderá crescer ou diminuir*/
     padding: 2rem;
 }
 
 .row .content h3 {
-    font-size:  3rem; /* define o tamanho da fonte para o subtitulo*/
-    color: #fff;/*cor da letra*/
-    padding: 1rem; /* adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
-    line-height: 1,8rem;/* define o espaçamento entre limhas de um texto */
-
-}
- /*caixas com preço */
-
-.products .box-container {
-
-    display: grid; /*organiza os elementos em uma grande*/
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    /* creia colunas flexiveis com altura de 30rem e maxima*/
-gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
-
-}
-
-
-
- /* estlizando os box  (as caixas)*/
-
- .box-container .box {
-    text-align: center; /*centralizando textos*/
-    border: var(--border); /*aplica uma borda ao redor da caixa*/
-    padding: 2rem; /*adiciona espaçamento interno nas caixas*/
- }
-
- /*estilizando os icons*/
- .icons a i {
-    height: 3rem; 
-    width: 3rem;
-    font-size: 1.7rem;
-    border: var(--border);
+    font-size: 3rem;
+    /* define o tamanho da fonte para o subtitulo*/
     color: #fff;
+    /*cor da letra*/
+    padding: 1rem;
+    /* adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
+    line-height: 1, 8rem;
+    /* define o espaçamento entre limhas de um texto */
+}
+
+.container {
+    display: grid;
+    /*Organiza os elementos internos em um layout de grade*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*Cria colunas flexíveis com largura mínima de 30rem e maxíma proporcional*/
+    gap: 1.5rem;
+    /*Define o espaço espeçamento entre os itens da grade*/
+}
+
+.container .box {
+    padding: 5rem;
+    /*Adiciona espaçamento interno ao redor do conteudo da caixa*/
+    text-align: center;
+    /*Centraliza o texto horizontalmente*/
+    border: var(--border);
+    /*Aplicando uma borda ao redor da caixa*/
+    background: var(--bg-card);
+    /*Defina a cor de fundo da caixa*/
+}
+
+.container .box img {
+    height: 18rem;
+    /*Define a altura da imagem*/
+    border-radius: 100%;
+    /*Tornar a imagem circular*/
+}
+
+.container .box h2 {
+    color: #fff;
+    /*aplica a cor brnaco ao titulo*/
+    font-size: 2rem;
+    /*define o tamanho da fonte do titulo*/
+    padding: 1rem 0;
+    /*Adiciona espaçamento vertical ao titulo*/
+}
+
+.container .box .price {
+    font-size: 2.5rem;
+    /*define o tamanho da fonte do preço*/
+    padding: 0.5rem 0;
+    /*adiciona espaçamento vertical ao preço*/
+    color: #fff;
+    /*Define a cor brana para o preço*/
+}
+
+.container .box .price span {
+    font-size: 1.5rem;
+    /*define o tamanho da fonte para o preço original*/
+    text-decoration: line-through;
+    /*aplica uma linha para indicar o preço riscado*/
+    font-weight: lighter;
+    /*aplica um peso de fonte mais fino*/
+}
+
+.container .box:hover {
+    background: #fff;
+}
+
+.container .box:hover>* {
+    color: black;
+}
+
+/* PROMOÇÕES */
+
+/* estilizando a DIV pai */
+.products .box-container {
+    display: grid;
+    /*organiza os elementos em uma grade*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*cria colunas flexiveis com largura minima de 30rem e maxima proporcional*/
+    gap: 1.5rem;
+    /*define o espçamento entre os itens da grade*/
+}
+
+/* estilizando os box (as caixas) */
+.box-container .box {
+    text-align: center;
+    /*centraliza os textos*/
+    border: var(--border);
+    /*aplica uma borda ao redor da caixa*/
+    padding: 2rem;
+    /*adiciona espaçamento interno nas caixas*/
+}
+
+
+
+/* estilizando os icons */
+.icons a i {
+    height: 3rem;
+    /*define a altura dos icones*/
+    width: 3rem;
+    /*largura dos icones*/
+    line-height: 3rem;
+    /*distancia dos conteúdos/altura da linha*/
+    font-size: 1.7rem;
+    /*define o tamanho da fonte para os icones*/
+    border: var(--border);
+    /*aplica uma borda ao redor dos icones*/
+    color: #fff;
+    /*define a cor branca para os icones*/
     margin: 0.3rem;
- } 
-
- .icons a i:hover {
-    background: var(--main-color); /*altera o fundo dos icons para a cor pricipal*/
- }
-
- .box image {
-    padding: 2rem; /*adociona espaçamento vertical*/
- }
-
- .box .image img {
-    height: 25rem; /*altura das imagem*/
- }
-
-
-/*estilização da caixa "content"*/
-
-.box .container {
-
-    color: #fff; /* define a cor branca para o conteódo twxtual*/
-  font-size: 2.5rem; /*define o tamanho da fonte das estrelas*/
+    /*adiciona espaçamento entre os icones*/
 }
 
-.box .container .stars i {
-
-    font-size: 1.9rem; /*tamanha das estrelas*/
-     color: var(--main-color); /*aplica a cor principal as estrelas*/
+.icons a i:hover {
+    background: var(--main-color);
+    /*altere o fundo dos icones para a cor principal*/
 }
 
-.box p {
-    color: #ccc;
-
+.box .image {
+    padding: 2.5rem 0;
+    /*adiciona espaçamento vertical*/
 }
 
-.box .container .price {
+.box .image img {
+    height: 25rem
+        /*altura das imagens*/
+    ;
+}
+
+/*estilização da caixa "content" */
+.box .content {
+    color: #fff;
+    /*define a cor para o conteudo textual*/
+    font-size: 2.5rem;
+    /*define o tamanho da fonte para o conteudo*/
+}
+
+.box .content .stars {
+    padding: 1.5rem;
+    /*adiciona espaçamento ao redor das estrelas*/
+}
+
+.box .content .stars i {
+    font-size: 1.9rem;
+    /*tamanho das estrelas*/
+    color: var(--main-color);
+    /*aplica cor principal as estrelas*/
+}
+
+.box .content .price {
     color: #fff;
     font-size: 2.5rem;
 }
 
-.box .container .price span {
-    font-weight: lighter; /*aplica afonte mais fina para o texto*/
-    font-size: 1.5rem; /*defina o tamanho da fonte*/
-    text-transform: lowercase; /* tranforma o texto adicional para letras maiuculas*/
+.box .content .price span {
+    font-weight: lighter;
+    /*aplica a fonte mais fina para o texto*/
+    font-size: 1.5rem;
+    /*define o tamanho da fonte*/
+    text-transform: lowercase;
+    /*transforma o texto adicionalpara letras minusculas*/
 }
+
 .content h3 {
-    font-size: 1rem;
-
+    font-size: 2.1rem;
 }
 
-/*inicio aula de hohe 29/05/25*/
-
-.container .box-container {
-    display: grid;/**/
-    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+/* FORMATAÇÃO DAS CAIXAS, AQUI ESTAMOS MEXENDO NO ELEMENTO PAI */
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-/*aqui estmaos alterando a caixa (box)*/
+/* aqui estamos alterando a caixa (box) */
 .review .box-container .box {
     border: var(--border);
-    text-align: center; /*cetralizar o texto*/
+    text-align: center;
+    /*centraliza os textos*/
     padding: 3rem 2rem;
+    /*adiciona espaçamento interno nas caixas*/
 }
 
+/*estilização do paragrafo*/
+.review .box-container .box p {
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    color: #ccc;
+    padding: 2rem 0;
+}
 
-
-
-.review .box-container .box h3 {
-    padding: 1rem 0; /* add espaçamento lateral zerado as letras */
-    color: #fff;
+.revie .box-container .box h3 {
+    padding: 1rem 0;
+    color: #ccc;
     font-size: 2.2rem;
+
 }
-
-
 
 .user {
-    height: 10rem; /*define altura */
-    width: 10rem; 
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -383,68 +489,60 @@ gap: 1.5rem; /*define os espaçamentos entre os iensda caixa grande*/
     color: var(--main-color);
 }
 
-/*aula de hoje 30/05/25*/
-
-/*footer*/
-
+/* footer */
 .title-footer {
     text-align: center;
-    text-transform: uppercase; /* caixa alte*/
-    font-size: 2rem ;/*20%*/
+    text-transform: uppercase;
+    /*caixa alta = letra maiuscula*/
+    font-size: 2rem;
+    /*20px*/
     color: #fff;
     margin-bottom: 1.5rem;
 }
 
 .title-footer span {
     color: var(--main-color);
-    text-transform: uppercase; /*caixa alta*/
-
+    text-transform: uppercase;
 }
 
-footer {
+.footer {
     background: var(--bg);
     text-align: center;
-    padding: 4rem 0;/*add espacamento interno vertical ao rodapé*/
-
+    padding: 4rem 0; /*add espaçamento interno vertical ao rodapé*/
 }
 
-footer .container {
+.footer .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 7%; /* add espacçamento interno horizonltal usando pocentagem*/
-
-} 
+    padding: 0 7%; /*add espaçamento interno horizontal usando porcentagem*/
+}
 
 .content-1 {
-
-    flex: 1 1 25rem; /*define tamanho flexivel com largura minima de 25rem*/
-    margin: 1rem; /*add espaçamento ao redor do conteúdo*/
+    flex: 1 1 25rem; /*define o tamanho flexivel com largura minima de 25rem*/
+    margin: 1rem; /*add espaçamento ao redor do conteudo*/
 }
 
 .content-1 ul {
-
     list-style: none;
-    padding: 0;/* remove espaçamento interno padrão*/
-    
+    padding: 0; /*remove espaçamento interno padrão*/
 }
-.content-1 ul {
-margin-bottom: 1rem; /*add espaçamento inferior entre os intens da lista*/
 
-
+.content-1 ul li {
+    margin-bottom: 1rem; /*add espaçamento inferior entre os itens da lista*/
 }
 
 .content-1 ul li a {
-
     color: #ccc;
     text-decoration: none;
-    font-size:  1.6rem;
+    font-size: 1.6rem;
 }
 
 .content-1 ul li a:hover {
-    color: var(--main-color);
-    transition: 0.8s;
+color: var(--main-color);
+transition: 0.8s;
 }
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -455,7 +553,6 @@ margin-bottom: 1rem; /*add espaçamento inferior entre os intens da lista*/
 .social-links a i {
     color: #ccc;
     font-size: 3rem;
-
 }
 
 .social-links a i:hover {
@@ -463,20 +560,13 @@ margin-bottom: 1rem; /*add espaçamento inferior entre os intens da lista*/
     transition: 0.8s;
 }
 
-.footer-botton{
-    text-align: center;
-    /*centraliza o texto*/
-    padding: 1rem;
-    /*adiciona espaçamento interno vertical*/
-    font-size: 1.6rem;
-    /*difine o tamanho da  fonte*/
-    border-top: var(--border);
-    /*Adiciona uma borda superior*/
-    margin-top: 2rem;
-    /*Adiciona espaço acima do rodapé inferior*/
-    color: #ccc;
-    /*difine a cor do texto como cinza clara*/
-
+.footer-bottom {
+    text-align: center; /*centraliza o texto*/
+    padding: 1rem 0; /*adiciona espaçamento interno vertical*/
+    font-size: 1.6rem; /*Define o tamanho da fonte*/
+    border-top: var(--border); /*Adiciona uma borda superior*/
+    margin-top: 2rem;/*adiciona espaço acima do rodapé inferior*/
+    color: #ccc; /*Define a cor do texto como cinza claro*/
 }
 
 
@@ -484,81 +574,36 @@ margin-bottom: 1rem; /*add espaçamento inferior entre os intens da lista*/
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(255, 255, 255);
-    color: white;
-   border-radius: 50%;
-   width: 4rem;
-   height: 4rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 2rem;
-   z-index: 1000;
-
-}
-
-.botao-whats:hover {
     background-color: #25d366;
-    transition: 0.7s;
+    color: white;
+    border-radius: 50%;
+    width: 4.1rem;
+    height: 4.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 1000;
 }
-
-
-
-
-
-
 
 @media (max-width: 991px) {
-    html{
+    html {
         font-size: 55%;
     }
 
-
-header {
-    padding: 1.5rem 2rem;
-
+    header {
+        padding: 1.5rem 2rem;
+    }
 }
 
 section {
     padding: 2rem;
 }
- 
 
+@media (max-width: 768px) {
+    /*colocar código para esconder o menu*/
+    .ul-header {
+        display: none;
+    }
+    
 }
-
-@media (max-width: 768px) { 
-/*colocar código para esconder o menu*/
-
-.ul-header {
-    display: none; 
-    /* display: none; esconde o menu em tele menor com cecular*/
-
-   
-
-}
-
-}
-
-@media (max-width: 768px)
-/*deixa o site resposivel para relógio entrega sexta*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-/* https://www.w3schools.com/cssref/sel_before.php */
