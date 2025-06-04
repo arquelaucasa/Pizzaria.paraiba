@@ -516,11 +516,14 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 7%; /*add espaçamento interno horizontal usando porcentagem*/
+
 }
 
 .content-1 {
     flex: 1 1 25rem; /*define o tamanho flexivel com largura minima de 25rem*/
     margin: 1rem; /*add espaçamento ao redor do conteudo*/
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .content-1 ul {
@@ -568,8 +571,8 @@ transition: 0.8s;
     margin-top: 2rem;/*adiciona espaço acima do rodapé inferior*/
     color: #ccc; /*Define a cor do texto como cinza claro*/
 }
-
-
+ 
+ 
 .botao-whats {
     position: fixed;
     bottom: 20px;
@@ -606,4 +609,18 @@ section {
         display: none;
     }
     
+}
+
+@media(max-width: 168px)  {
+    html {
+        font-size: 30%;
+
+    }
+}
+
+@media(max-width: 168px)  {
+    main {
+        font-size: 25%;
+
+    }
 }
