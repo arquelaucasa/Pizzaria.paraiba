@@ -444,6 +444,7 @@ section {
 
 .content h3 {
     font-size: 2.1rem;
+ 
 }
 
 /* FORMATAÇÃO DAS CAIXAS, AQUI ESTAMOS MEXENDO NO ELEMENTO PAI */
@@ -476,6 +477,11 @@ section {
     font-size: 2.2rem;
 
 }
+ .box-container .box h3 {
+    color: #ccc;
+    font-size: 2rem;
+}
+
 
 .user {
     height: 10rem;
